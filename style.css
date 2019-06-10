@@ -1,0 +1,64 @@
+
+body {
+    background: url(https://d2d00szk9na1qq.cloudfront.net/Product/3ced2ffe-33a9-439f-bb22-c11dd4129e28/Images/Large_EH-750.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+
+
+button {
+    background-color: salmon;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 30px;
+    margin: 20px 0px 30px 15px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+
+button:hover {
+    color: white;
+}
+
+
+#giphy {
+    float: left;
+    width: 66.66%;
+}
+
+
+.wrapper {
+    min-height: 100%;
+    margin: 0;
+    margin-bottom: -25px;
+}
+
+
+#search {
+    float: right;
+    width: 33.33%;
+}
+
+p {
+    margin-top: 120px;
+    margin-left: 30px;
+    color: #d65d17;
+    letter-spacing: 0.5px;
+}
+
+
+input {
+    margin-left: 30px;
+    width: 250px;
+    border: none;
+}
+
+
+#submit {
+    float: right;
+    margin-right: 138px;
+    font-size: 13px;
+    background-color: sandybrown;
+}
+
+
