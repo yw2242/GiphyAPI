@@ -52,23 +52,23 @@ $(document).ready(function() {
 
 
 
-    // Function for displaying movie data
+    // Function for displaying giphy data
     function renderButtons() {
 
-      // Deleting the movie buttons prior to adding new movie buttons
+      // Deleting the movie buttons prior to adding new buttons
       // (this is necessary otherwise we will have repeat buttons)
       $("header").empty();
 
-      // Looping through the array of movies
+      // Looping through the array of animals
       for (var i = 0; i < animals.length; i++) {
 
-        // Then dynamicaly generating buttons for each movie in the array.
+        // Then dynamicaly generating buttons for each animal in the array.
         // This code $("<button>") is all jQuery needs to create the start and end tag. (<button></button>)
         var a = $("<button>");
         a.addClass("animalBtn");
-        // Adding a data-attribute with a value of the movie at index i
+        // Adding a data-attribute with a value of the animal at index i
         a.attr("data-animal", animals[i]);
-        // Providing the button's text with a value of the movie at index i
+        // Providing the button's text with a value of the animal at index i
         a.text(animals[i]);
         // Adding the button to the HTML
         $("header").append(a);
@@ -86,11 +86,11 @@ $(document).ready(function() {
       // The movie from the textbox is then added to our array
       animals.push(text);
 
-      // calling renderButtons which handles the processing of our movie array
+      // calling renderButtons which handles the processing of the animals array
       renderButtons();
     });
 
-    // Calling the renderButtons function at least once to display the initial list of movies
+    // Calling the renderButtons function at least once to display the initial list of animals
     renderButtons();
 
     $(document).on("click", ".animalBtn", displayAnimals);
